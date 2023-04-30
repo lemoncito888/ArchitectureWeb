@@ -1,0 +1,58 @@
+#splash{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:lightblue;
+    z-index:200;
+    color:#b3a772;
+    text-align:center;
+    line-height: 90vh;
+    
+}
+#splash.display-none{
+    position:fixed;
+    opacity:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background-color:#6f663c;
+    z-index:-10;
+    color:#b3a772;
+    text-align:center;
+    line-height: 90vh;
+}
+@keyframes fadeIn {
+    to{
+        opacity:1;   
+    }
+}
+.fade-in{
+    opacity:0;
+    animation:fadeIn 2.5s ease-in forwards;
+
+}
+@keyframes fadeOut {
+    to{
+        opacity:0;   
+    }
+}
+.fade-out{
+    opacity:1;
+    animation:fadeIn 1.5s ease-out backwards;
+    text-align:center;
+    margin-bottom:2%;
+    margin-top:2%;
+    color:#2a2616;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+#New-York:hover{
+    color: rgb(246,245,240);
+    opacity:1;
+}
+

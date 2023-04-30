@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--this is how you comment on HTML-->
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="app.js"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>New York.</title>
+    <link href = "style.css" rel="stylesheet"/>
+    <link rel="icon" type="favicon/jpg" href="favicon.jpg">
+  </head>
+  <body>
+    <audio id="my_audio" src="taxi_horn.mp3" autostart="false"></audio>
+    
+    <script>
+      function taxi_horn(page_name){
+        var sound = document.getElementById("my_audio");
+        sound.play();
+        setTimeout(function(){ location.href = page_name ;}, sound.duration*1000);
+      }
+    </script>
+    <div class= "section" id="splash">
+      <h1 class="fade-in" style="font-size: 100px;"><a id="New-York" onclick="taxi_horn('main.html');">New York</a></h1>
+    </div>
+  </body>
+</html>
